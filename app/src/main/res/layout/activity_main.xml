@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Chronometer
+        android:id="@+id/time"
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单"
+        android:layout_below="@+id/time"
+        android:layout_toLeftOf="@id/medium"
+        android:layout_marginRight="50dp"/>
+    <Button
+        android:id="@+id/medium"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+        android:text="中等"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/diff"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="困难"
+        android:layout_toRightOf="@+id/medium"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/time"/>
+
+
+    <com.example.pintu.GamePintuLayout
+        android:id="@+id/id_gameview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:padding="5dp" />
+    <Button
+        android:id="@+id/picture1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="图片1"
+        android:layout_below="@+id/id_gameview"
+        android:layout_toLeftOf="@+id/picture2"/>
+    <Button
+        android:id="@+id/picture2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="图片2"
+        android:layout_below="@+id/id_gameview" />
+
+    <Button
+        android:id="@+id/picture3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_gameview"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/picture2"
+        android:text="图片3" />
+    <Button
+        android:id="@+id/timestart"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="开始计时"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/picture1"/>
+
+
+</RelativeLayout>
